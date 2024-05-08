@@ -20,3 +20,8 @@ let stringArr = ['Hi,', 'Everyone']
 // Update
 let stringE = stringC.replace("Hello", stringArr[0])
 console.log(stringE)
+
+// Output
+// Hello World
+// Hello 
+// Hi, World
