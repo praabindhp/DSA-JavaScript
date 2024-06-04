@@ -1,8 +1,3 @@
-function log() { console.log('Throttled!'); }
-const throttledLog = throttle(log, 2000);
-throttledLog(); // The log will appear immediately.
-throttledLog(); // Subsequent calls within 2 seconds will be ignored.
-
 function throttle(func, limit) {
     let inThrottle;
     return function () {
@@ -15,3 +10,8 @@ function throttle(func, limit) {
         }
     }
 }
+
+function log() { console.log('Throttled!'); }
+const throttledLog = throttle(log, 2000);
+throttledLog(); // The log will appear immediately.
+throttledLog(); // Subsequent calls within 2 seconds will be ignored.
