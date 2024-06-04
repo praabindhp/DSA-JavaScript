@@ -12,3 +12,4 @@ function hexToRgb(hex) {
 }
 
 console.log(hexToRgb("#FFA80A")) // { r: 255, g: 0, b: 0 }
+console.log(hexToRgb("#00FF00")) // { r: 0, g: 255, b: 0 }
