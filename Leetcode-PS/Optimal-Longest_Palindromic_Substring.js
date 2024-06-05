@@ -1,5 +1,5 @@
-T.C=0(N^2)
-S.C=0(1)
+T.C = 0(N ^ 2)
+S.C = 0(1)
 
 var longestPalindrome = function (str) {
     if (str.length < 2) {

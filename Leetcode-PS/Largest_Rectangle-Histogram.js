@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var largestRectangleArea = function(heights) {
+var largestRectangleArea = function (heights) {
     let maxArea = 0;
     const stack = [];
     heights = [0].concat(heights).concat([0]);

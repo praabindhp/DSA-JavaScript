@@ -1,5 +1,4 @@
-function paintFence(n, k)
-	{
+function paintFence(n, k) {
 
 	let dp = new Array(n + 1);
 	dp.fill(0);
@@ -7,17 +6,16 @@ function paintFence(n, k)
 	dp[1] = k;
 	let same = 0, diff = k;
 
-	for (let i = 2; i <= n; i++)
-	{
+	for (let i = 2; i <= n; i++) {
 		same = diff;
 
 		diff = (dp[i - 1] * (k - 1));
-        diff = diff % mod;
+		diff = diff % mod;
 
 		dp[i] = (same + diff) % mod;
 	}
 	return dp[n];
-	}
-	
-	let n = 3, k = 2;
-	console.log(paintFence(n, k));
+}
+
+let n = 3, k = 2;
+console.log(paintFence(n, k));

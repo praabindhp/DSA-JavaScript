@@ -8,37 +8,37 @@
 // Decoded String Any Trading Space
 
 function slantedCipher(text, rows) {
-    let matrix = [];
-    for (let i = 0; i < rows; i++) {
-      matrix[i] = [];
-    }
-  
-    let row = 0, col = 0, direction = 1;
-    for (let i = 0; i < text.length; i++) {
-      matrix[row][col] = text[i];
-  
-      if (row === 0 || row === rows - 1) {
-        direction *= -1;
-      }
-  
-      row += direction;
-      col++;
-    }
-  
-    let result = "";
-    for (let i = 0; i < rows; i++) {
-      for (let j = 0; j < matrix[i].length; j++) {
-        if (matrix[i][j]) {
-          result += matrix[i][j];
-        }
-      }
-    }
-  
-    return result;
+  let matrix = [];
+  for (let i = 0; i < rows; i++) {
+    matrix[i] = [];
   }
-  
-  console.log(slantedCipher("HELLO WORLD", 3));
-    
+
+  let row = 0, col = 0, direction = 1;
+  for (let i = 0; i < text.length; i++) {
+    matrix[row][col] = text[i];
+
+    if (row === 0 || row === rows - 1) {
+      direction *= -1;
+    }
+
+    row += direction;
+    col++;
+  }
+
+  let result = "";
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j]) {
+        result += matrix[i][j];
+      }
+    }
+  }
+
+  return result;
+}
+
+console.log(slantedCipher("HELLO WORLD", 3));
+
 // Task
 // Less Than, Greater Than In A Array [1,2,3,4,5,6,7,8,9,10]
 // Output - [1,2,3,4,5,6,7,8,9,10]

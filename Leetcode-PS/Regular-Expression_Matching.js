@@ -3,7 +3,7 @@
  * @param {string} p
  * @return {boolean}
  */
-var isMatch = function(s, p) {
+var isMatch = function (s, p) {
     let sLen = s.length;
     let pLen = p.length;
     if (pLen === 0) return sLen === 0;

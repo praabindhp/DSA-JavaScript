@@ -37,7 +37,7 @@ equationsPossible = (equations) => {
 		let existing = key_bucket_index[l] || key_bucket_index[r];
 
 		if (existing) {
-			
+
 			// if so, empty one of both or those buckets into a newly created bucket.
 			let bucket = {
 				[l]: true,

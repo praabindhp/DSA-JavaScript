@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var rob = function(nums) {
+var rob = function (nums) {
     if (nums.length === 1) {
         return nums[0]
     }
@@ -11,7 +11,7 @@ var rob = function(nums) {
     function lootArray(subset = []) {
         let rob1 = 0
         let rob2 = 0
-        
+
         for (let i = 0; i < subset.length; i++) {
             let temp = Math.max(subset[i] + rob1, rob2)
             rob1 = rob2

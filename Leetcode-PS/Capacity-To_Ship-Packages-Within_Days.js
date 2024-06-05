@@ -4,7 +4,7 @@
  * @return {number}
  */
 
-var shipWithinDays = function(weights, days) {
+var shipWithinDays = function (weights, days) {
     // find the left and right boundary of the initial search range
     let left = Math.max(...weights);
     let right = weights.reduce((sum, weight) => sum + weight, 0);

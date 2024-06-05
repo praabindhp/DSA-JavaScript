@@ -3,7 +3,7 @@
  * @param {number[]} arr2
  * @return {number[]}
  */
-var relativeSortArray = function(arr1, arr2) {
+var relativeSortArray = function (arr1, arr2) {
     let result = {};
     let first = [];
     let last = [];

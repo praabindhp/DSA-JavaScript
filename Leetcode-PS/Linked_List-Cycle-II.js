@@ -12,7 +12,7 @@
  */
 
 function detectCycle(head) {
-    if(!head || head.val === 100500)
+    if (!head || head.val === 100500)
         return head;
 
     head.val = 100500;

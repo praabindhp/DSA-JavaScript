@@ -3,7 +3,7 @@
  * @return {string}
  */
 
-var predictPartyVictory = function(senate) {
+var predictPartyVictory = function (senate) {
     const stack = [], arr = senate.split('');
 
     for (let i = 0; i < arr.length; ++i) {

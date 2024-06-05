@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var compress = function(chars) {
+var compress = function (chars) {
     let i = 0;
     let j = 0;
     while (j < chars.length) {

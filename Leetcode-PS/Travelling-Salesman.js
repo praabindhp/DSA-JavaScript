@@ -12,11 +12,11 @@ const travllingSalesmanProblem = (graph, s) => {
 	let min_path = Number.MAX_VALUE;
 
 	do {
-	
+
 		let current_pathweight = 0;
-		
+
 		let k = s;
-		
+
 		for (let i = 0; i < vertex.length; i++) {
 			current_pathweight += graph[k][vertex[i]];
 			k = vertex[i];
@@ -33,7 +33,7 @@ const swap = (data, left, right) => {
 	let temp = data[left];
 	data[left] = data[right];
 	data[right] = temp;
-	
+
 	return data;
 }
 
@@ -75,7 +75,7 @@ const findNextPermutation = (data) => {
 	}
 
 	data = swap(data, nextGreater, last);
-	
+
 	data = reverse(data, last + 1, data.length - 1);
 
 	return true;

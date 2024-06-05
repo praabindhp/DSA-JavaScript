@@ -9,7 +9,7 @@
  * @param {number} by2
  * @return {number}
  */
-var computeArea = function(ax1, ay1, ax2, ay2, bx1, by1, bx2, by2) {
+var computeArea = function (ax1, ay1, ax2, ay2, bx1, by1, bx2, by2) {
     let erea1 = (ax2 - ax1) * (ay2 - ay1),
         area2 = (by2 - by1) * (bx2 - bx1);
     if (bx1 >= ax2 || by1 >= ay2 || ay1 >= by2 || ax1 >= bx2) {

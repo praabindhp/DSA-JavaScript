@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var consecutiveNumbersSum = function(n) {
+var consecutiveNumbersSum = function (n) {
     let result = 1;
     for (let i = 2; i <= n; i++) {
         if (n / i < Math.floor((i + 1) / 2)) break;

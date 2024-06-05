@@ -12,9 +12,9 @@
  * @return {ListNode}
  */
 
-var swapNodes = function(head, k) {
+var swapNodes = function (head, k) {
     let node1, node2;
-    
+
     const traverse = (node, count = 1) => {
         if (!node) {
             return 1;
@@ -22,21 +22,21 @@ var swapNodes = function(head, k) {
         if (count === k) {
             node1 = node;
         }
-        
+
         const index = traverse(node.next, count + 1);
-        
+
         if (index === k) {
             node2 = node;
         }
-        
+
         return index + 1;
     }
-    
+
     traverse(head);
-    
+
     if (node1 && node2) {
         [node1.val, node2.val] = [node2.val, node1.val];
     }
-       
+
     return head;
 };

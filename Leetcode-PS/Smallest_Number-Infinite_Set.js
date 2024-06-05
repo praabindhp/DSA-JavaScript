@@ -1,13 +1,13 @@
-var SmallestInfiniteSet = function() {
-    this.set = Array( 1000 ).fill( 1 )
+var SmallestInfiniteSet = function () {
+    this.set = Array(1000).fill(1)
 };
 
 /**
  * @return {number}
  */
-SmallestInfiniteSet.prototype.popSmallest = function() {
-    let num = this.set.findIndex( n => n )
-    this.set[ num ] = 0
+SmallestInfiniteSet.prototype.popSmallest = function () {
+    let num = this.set.findIndex(n => n)
+    this.set[num] = 0
     return num + 1
 };
 
@@ -15,8 +15,8 @@ SmallestInfiniteSet.prototype.popSmallest = function() {
  * @param {number} num
  * @return {void}
  */
-SmallestInfiniteSet.prototype.addBack = function(num) {
-    this.set[ num - 1 ] = 1
+SmallestInfiniteSet.prototype.addBack = function (num) {
+    this.set[num - 1] = 1
 };
 
 /** 

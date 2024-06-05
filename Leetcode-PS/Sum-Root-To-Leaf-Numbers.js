@@ -29,7 +29,7 @@ var sumNumbers = function (root) {
             if (node.right) dfs(node.right, sum * 10 + node.val);
         }
     }
-    
+
     // Call on root with current sum 0
     dfs(root, 0);
 

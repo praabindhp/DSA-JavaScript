@@ -9,11 +9,11 @@
 /**
  * @param {ListNode} head
  */
-var Solution = function(head) {
+var Solution = function (head) {
     this.res = [];
     let curr = head;
-    
-    while(curr !== null) {
+
+    while (curr !== null) {
         this.res.push(curr)
         curr = curr.next;
     }
@@ -23,8 +23,8 @@ var Solution = function(head) {
 /**
 * @return {number}
 */
-Solution.prototype.getRandom = function() {
-return this.res[Math.floor(Math.random() * this.length)].val
+Solution.prototype.getRandom = function () {
+    return this.res[Math.floor(Math.random() * this.length)].val
 };
 
 /** 

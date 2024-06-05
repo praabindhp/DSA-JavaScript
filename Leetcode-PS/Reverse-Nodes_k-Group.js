@@ -12,7 +12,7 @@
  * @return {ListNode}
  */
 
-var reverseKGroup = function(head, k) {
+var reverseKGroup = function (head, k) {
     let count = 0;
     let node = head;
     while (node && count != k) {
